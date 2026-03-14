@@ -1,0 +1,10 @@
+{
+  "name": "quantum-football-predictor",
+  "version": "2.0.0",
+  "description": "Quantum-Inspired Football Prediction — 25 Leagues",
+  "type": "module",
+  "engines": { "node": "24.x" },
+  "scripts": {
+    "build": "echo 'No build step needed'"
+  }
+}
