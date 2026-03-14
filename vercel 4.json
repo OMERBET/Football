@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "outputDirectory": ".",
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/api/predict",  "destination": "/api/predict.js"  },
+    { "source": "/api/leagues",  "destination": "/api/leagues.js"  },
+    { "source": "/api/teams",    "destination": "/api/teams.js"    },
+    { "source": "/api/batch",    "destination": "/api/batch.js"    },
+    { "source": "/api/upcoming", "destination": "/api/upcoming.js" },
+    { "source": "/",             "destination": "/index.html"      }
+  ],
+  "headers": [
+    {
+      "source": "/api/(.*)",
+      "headers": [
+        { "key": "Access-Control-Allow-Origin",  "value": "*" },
+        { "key": "Access-Control-Allow-Methods", "value": "GET,POST,OPTIONS" },
+        { "key": "Access-Control-Allow-Headers", "value": "Content-Type" }
+      ]
+    }
+  ]
+}
