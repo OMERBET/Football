@@ -1,0 +1,15 @@
+{
+  "name": "quantum-football-predictor",
+  "version": "2.0.0",
+  "description": "Quantum-Inspired Football Prediction — 25 Leagues",
+  "type": "module",
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "dev":   "vercel dev",
+    "build": "echo 'No build step needed'",
+    "start": "vercel dev"
+  },
+  "devDependencies": {
+    "vercel": "^32.0.0"
+  }
+}
